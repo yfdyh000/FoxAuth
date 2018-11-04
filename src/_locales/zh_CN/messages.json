@@ -1,0 +1,14 @@
+{
+    "extensionDescription": {
+        "message": "A Firefox authenticator that can autofill TOTP codes with Firefox Android support",
+        "description": ""
+    },
+    "extensionName": {
+        "message": "FoxAuth Authenticator",
+        "description": ""
+    },
+    "browserActionTitle": {
+        "message": "FoxAuth",
+        "description": ""
+    }
+}
