@@ -7,8 +7,11 @@ const getI18nMessage = (strName = "") => {
 }
 
 for (let elem of document.querySelectorAll("[data-i18n]")) {
-    elem.textContent = getI18nMessage(`elem_${elem.dataset['i18n']}`);
+    elem.textContent = getI18nMessage(`l10n_${elem.dataset['i18n']}`);
 }
 for (let elem of document.querySelectorAll("[data-title-i18n]")) {
-    elem.title = getI18nMessage(`elem_${elem.dataset['title-i18n']}`);
+    elem.title = getI18nMessage(`l10n_${elem.dataset['titleI18n']}`);
+}
+for (let elem of document.querySelectorAll("[data-html-i18n]")) {
+    elem.innerHTML = getI18nMessage(`l10n_${elem.dataset['htmlI18n']}`);
 }

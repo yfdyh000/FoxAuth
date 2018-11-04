@@ -16,7 +16,7 @@ function isVisible(elem) {
 function matchOTP() {
   var matchTarget = window.location.hostname;
   var matchIssuer;
-  switch (matchTarget) {
+  switch (matchTarget) { // todo: split to rules
     case "www.amazon.cn":
       matchIssuer = "z.cn"
       break;
@@ -69,7 +69,7 @@ async function getTotpKey() {
   });
 
   if (!account) {
-    return 'ERROR';
+    return 'ERROR'; // todo
   }
 
 

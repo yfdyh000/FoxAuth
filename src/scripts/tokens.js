@@ -77,6 +77,7 @@
   };
   formBox.addEventListener('input', valueChangeHandler);
   formBox.addEventListener('change', valueChangeHandler);
+  tokenSearch.placeholder = getI18nMessage('searchbox_placeholder');
   tokenSearch.addEventListener('input', (event) => {
     debounce(handleSearch, 300)
   });

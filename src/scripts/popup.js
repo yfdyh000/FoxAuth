@@ -129,12 +129,12 @@ function addOTP(issuer, containerObj = {}, key, expiry = 30, code_length = 6, op
     otpKey = KeyUtilities.generate(OTPType.totp, key, code_length, expiry);
   } catch (error) {
     console.error(error);
-    otpKey = 'ERROR';
+    otpKey = getI18nMessage('account_error');
     otpKeyClassName = 'popup-link-error'
   }
   var id = otpContainer.otppoint.push(new template_totp({
     $data: {
-      i18n_Copy: 'Copy',
+      i18n_Copy: 'Copy', // todo
       i18n_Edit: 'Edit',
       OTP: otpKey,
       issuer: issuer,
@@ -150,7 +150,7 @@ function addOTP(issuer, containerObj = {}, key, expiry = 30, code_length = 6, op
       index: option.index
     }
   })) - 1;
-  if (otpKey !== 'ERROR') {
+  if (otpKey !== 'ERROR') { // todo
     otpStoreInterval.push(setInterval(function () {
       otpContainer.otppoint[id].$data.OTP = KeyUtilities.generate(1, key, code_length, expiry)
       otpContainer.otppoint[id].$data.progress = expiry - (Math.round(new Date().getTime() / 1000.0) % expiry)
@@ -189,6 +189,7 @@ function initSearch() {
       }
     })
   }
+  popupSearchInput.placeholder = getI18nMessage('searchbox_placeholder');
   popupSearchInput.addEventListener('input', e => {
     debounce(handleSearch, 300)
   })
@@ -211,7 +212,7 @@ function autoFillButtonInit() {
   if (passwordInfo.isEncrypted && !passwordInfo.password) {
     const errorDom = document.createElement('div');
     errorDom.setAttribute('class', 'popup-error');
-    errorDom.innerText = 'ENCRYPTED OR ERROR';
+    errorDom.innerText = 'ENCRYPTED OR ERROR'; // TODO
     document.body.appendChild(errorDom);
     return;
   }
@@ -225,7 +226,7 @@ function autoFillButtonInit() {
   if (!accountInfos || !accountInfos.length) {
     const emptyDom = document.createElement('div');
     emptyDom.setAttribute('class', 'popup-empty');
-    emptyDom.innerHTML = '<img src="../icons/options/starfleet.svg"/><div>Live long and prosper</div>';
+    emptyDom.innerHTML = '<img src="../icons/options/starfleet.svg"/><div>Live long and prosper</div>'; // todo
     document.body.appendChild(emptyDom);
     return;
   }

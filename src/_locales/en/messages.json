@@ -10,5 +10,53 @@
     "browserActionTitle": {
         "message": "FoxAuth",
         "description": ""
+    },
+    "account_error": {
+        "message": "ERROR",
+        "description": "red text on failure items of account panel"
+    },
+    "l10n_optionsPageTitle": {
+        "message": "FoxAuth Authenticator",
+        "description": ""
+    },
+    "l10n_optGeneral": {
+        "message": "General",
+        "description": ""
+    },
+    "l10n_optSecret": {
+        "message": "Secret Tokens",
+        "description": ""
+    },
+    "l10n_optBackupSync": {
+        "message": "Backup & Sync",
+        "description": ""
+    },
+    "l10n_optAbout": {
+        "message": "About",
+        "description": ""
+    },
+    "l10n_optContent1": {
+        "message": "Welcome to FoxAuth Authenticator.",
+        "description": ""
+    },
+    "l10n_optContent2": {
+        "message": "Check out <a href='https://github.com/FoxAuth/FoxAuth/wiki'>our wiki <img src='../icons/options/Open In New.svg' width='16px' height='16px'> </a> to get started.",
+        "description": ""
+    },
+    "l10n_optContent3": {
+        "message": "General Options",
+        "description": ""
+    },
+    "l10n_optAutofillOff": {
+        "message": "Disable TOTP code autofill globally (so that codes must be filled manually via context menu or popup).",
+        "description": ""
+    },
+    "l10n_optContextMenusOff": {
+        "message": "Disable context menus. (so that codes can be only filled via manual typing or popup).",
+        "description": ""
+    },
+    "l10n_": {
+        "message": "",
+        "description": ""
     }
 }

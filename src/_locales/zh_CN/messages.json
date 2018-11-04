@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "A Firefox authenticator that can autofill TOTP codes with Firefox Android support",
+        "message": "一款两步验证（OTP）扩展，为您的 Firefox 提供生成和自动填写 TOTP 校验码的功能。支持 Firefox Android。",
         "description": ""
     },
     "extensionName": {
@@ -10,5 +10,9 @@
     "browserActionTitle": {
         "message": "FoxAuth",
         "description": ""
+    },
+    "account_error": {
+        "message": "出错",
+        "description": "red text on failure items of account panel"
     }
 }

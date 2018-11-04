@@ -6,7 +6,7 @@
     <meta name="description" content="FoxAuth Authenticator">
     <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'/>
     <link rel="icon" href="../icons/icon.svg">
-    <title data-i18n="options-title">FoxAuth Authenticator</title>
+    <title data-i18n="optionsPageTitle">FoxAuth Authenticator</title>
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/options.css" rel="stylesheet">
 </head>
@@ -22,38 +22,38 @@
         <div class="actions">
             <a href="options.html" class="action-group active">
                 <img class="icon" src="../icons/options/Preferences.svg" alt="">
-                <div class="action" data-i18n="">General</div>
+                <div class="action" data-i18n="optGeneral">General</div>
             </a>
             <a href="tokens.html" class="action-group">
                 <img class="icon" src="../icons/options/tokens.svg" alt="">
-                <div class="action" data-i18n="">Secret Tokens</div>
+                <div class="action" data-i18n="optSecret">Secret Tokens</div>
             </a>
             <a href="sync.html" class="action-group">
                 <img class="icon" src="../icons/options/sync.svg" alt="">
-                <div class="action" data-i18n="">Backup & Sync</div>
+                <div class="action" data-i18n="optBackupSync">Backup & Sync</div>
             </a>
             <a href="about.html" class="action-group">
                 <img class="icon" src="../icons/options/about.svg" alt="">
-                <div class="action" data-i18n="">About</div>
+                <div class="action" data-i18n="optAbout">About</div>
             </a>
         </div>
     </div>
     <div class="content">
 
-        <p>Welcome to FoxAuth Authenticator.</p>
-        <p>Check out <a href="https://github.com/FoxAuth/FoxAuth/wiki">our wiki <img src="../icons/options/Open In New.svg"
+        <p data-i18n="optContent1">Welcome to FoxAuth Authenticator.</p>
+        <p data-html-i18n="optContent2">Check out <a href="https://github.com/FoxAuth/FoxAuth/wiki">our wiki <img src="../icons/options/Open In New.svg"
                     width="16px" height="16px"> </a> to get started.</p>
-        <h2>General Options</h2>
+        <h2 data-i18n="optContent3">General Options</h2>
 
         <div class="checkbox-group">
             <input class='settings-checkbox' type="checkbox" id="autofill" data-key='disableAutofill' name="autofill">
-            <label for="autofill">
+            <label for="autofill" data-i18n="optAutofillOff">
                 Disable TOTP code autofill globally (so that codes must be filled manually via context menu or popup).
             </label>
         </div>
         <div class="checkbox-group">
             <input class='settings-checkbox' type="checkbox" id="context" data-key='disableContext' name="context">
-            <label for="context">
+            <label for="context" data-i18n="optContextMenusOff">
                 Disable context menus. (so that codes can be only filled via manual typing or popup).
             </label>
 
